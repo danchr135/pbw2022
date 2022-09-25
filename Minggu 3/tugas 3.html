@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Belajar HTML 5 (Multimedia)</title>
+    </head>
+    <body>
+        <button onclick="playVid()" type="button"> Play Video </button>
+        <button onclick="pauseVid()" type="button"> Pause Video </button>
+        <button onclick="duration ()" type="button"> Duration </button><br>
+
+        <h2>Video HTML</h2>
+        <video id="video" width="300" height="240" autoplay muted >
+            <source src="mov_bbb" type="video/mp4">
+            <source src="mov_bbb" type="video/ogg">
+        </video>
+        <h2>Belajar video HTML5</h2>
+        <p> Belajar Menginput video dari youtube di HTML 5</p>
+        <iframe width="420" height="345"src="https://www.youtube.com/embed/qU9mHegkTc4" >
+    </iframe>
+    </body>
+    <script>
+            var vid = document.getElementById ("video");
+
+            function playVid() {
+                vid.play() ;
+            }
+            function pauseVid() {
+                vid.pause ();
+            }
+
+            function duration() {
+                alert (vid.duration) ;
+            }
+
+    </script>
+
+
+</html>
