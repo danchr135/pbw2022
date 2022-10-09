@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <h2>Video Subtitle</h2>
+    <button onclick="playVid()" type="button"> Play Video </button>
+    <button onclick="pauseVid()" type="button"> Pause Video </button>
+    <button onclick="duration ()" type="button"> Duration </button><br>
+    <video controls width="400" height="300">
+        <source src="mov_bbb.mp4" type="video/mp4">
+        <track src="captionvideo.vtt" kind="captions" srclang="in" label="Indonesia">
+    </video>
+
+    <script>
+ var vid = document.getElementById ("video");
+
+function playVid() {
+    vid.play() ;
+}
+function pauseVid() {
+    vid.pause ();
+}
+
+function duration() {
+    alert (vid.duration) ;
+}
+        </script>
+        </body>
+
+</html>
